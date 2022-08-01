@@ -24,7 +24,7 @@ do {
     seguirComprando = confirm('Queres seguir comprando?')
 } while (seguirComprando);
 if (seguirComprando === false){
-    let valorTotal = carrito.reduce(( valorAcc, item) => {return valorAcc + item.precio;}, 0);
+    valorTotal = carrito.reduce(( valorAcc, item) => {return valorAcc + item.precio;}, 0);
     alert('Gracias por tu compra! El valor total es: ' + valorTotal )
 }
 
